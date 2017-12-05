@@ -3,10 +3,21 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>vue-beijing</title>
+    <link rel="stylesheet" href="./src/style.css">
   </head>
   <body>
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
 </html>
+<script>
+  ~function () {
+    var desW = 750, //根据设计稿去修改  如果你拿到的设计稿是640  640;如果你拿到的设计稿是750  750
+      winW = document.documentElement.clientWidth,//动态获取设备的屏幕宽度
+      ratio = winW / desW;
+    document.documentElement.style.fontSize = ratio * 100 + 'px';
+  }()
+</script>

@@ -1,23 +1,23 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <MHeader></MHeader>
+    <Home></Home>
     <router-view/>
   </div>
 </template>
 
 <script>
+  import MHeader from './components/MHeader.vue';
+  import Home from './components/Home.vue';
 export default {
-  name: 'app'
+  name: 'app',
+  components:{
+    MHeader,
+    Home
+  }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
